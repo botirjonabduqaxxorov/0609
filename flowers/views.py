@@ -1,5 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Type, Flower
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'flowers/home.html')
+
 
 def all_flowers(request):
     flowers = Flower.objects.all()
