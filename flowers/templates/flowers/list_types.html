@@ -1,0 +1,7 @@
+{% load flower_tags %}
+
+<ul>
+    {% for type in get_all_types %}
+        <li>{{ type.name }}</li>
+    {% endfor %}
+</ul>
